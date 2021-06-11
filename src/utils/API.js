@@ -2,14 +2,13 @@
 import axios from "axios";
 
 const URL = "https://api.github.com/search/repositories?q=";
-const query = "twitter+politics";
-const language = "javascript";
-const order = "desc";
 
 export default {
-  getRepo: function () {
+  getRepo: function (query, dropdowns) {
     return axios.get(
-      `${URL + query}+language:${language}&sort=stars&order=${order}`
+      `${URL + query}+language:${dropdowns.language}&sort=stars&order=${
+        dropdowns.order
+      }`
     );
   },
 };

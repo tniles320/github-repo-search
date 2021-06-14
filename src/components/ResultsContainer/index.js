@@ -1,7 +1,7 @@
 import ResultComponent from "../ResultComponent";
 
 function ResultsContainer(props) {
-  const { results, setSelectedResults } = props;
+  const { results, setSelectedResult } = props;
 
   if (results !== undefined) {
     return (
@@ -10,8 +10,8 @@ function ResultsContainer(props) {
           return (
             <ResultComponent
               content={content}
-              setSelectedResults={setSelectedResults}
               key={index}
+              setSelectedResult={setSelectedResult}
             />
           );
         })}

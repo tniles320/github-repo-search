@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
@@ -15,17 +15,21 @@ function App() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    setResults();
-    const replaceQuery = query.query.replace(/\s/g, "+");
-    API.getRepo(replaceQuery, dropdowns).then((res) => {
-      if (res.data.incomplete_results === true) {
-        alert("Search can not be completed with the given terms");
-      } else if (res.data.items[0] === undefined) {
-        alert("No results with the given terms");
-      } else {
-        setResults(res.data.items);
-      }
-    });
+    if (query === undefined) {
+      alert("Please enter a search term");
+    } else {
+      setResults();
+      const replaceQuery = query.query.replace(/\s/g, "+");
+      API.getRepo(replaceQuery, dropdowns).then((res) => {
+        if (res.data.incomplete_results === true) {
+          alert("Search can not be completed with the given terms");
+        } else if (res.data.items[0] === undefined) {
+          alert("No results with the given terms");
+        } else {
+          setResults(res.data.items);
+        }
+      });
+    }
   };
 
   return (

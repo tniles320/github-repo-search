@@ -11,7 +11,7 @@ function ResultComponent(props) {
   // sets selectedResult and links to results page
   const handleLink = useCallback(() => {
     setSelectedResult({ selectedResult: content });
-    history.push("/results");
+    history.push("/github-repo-search/results");
   }, [history]);
 
   return (

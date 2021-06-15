@@ -10,7 +10,7 @@ function BackButton(props) {
   // resets selectedResult and links to home page
   const handleBackButton = useCallback(() => {
     setSelectedResult();
-    history.push("/");
+    history.push("/github-repo-search");
   }, [history]);
 
   return (

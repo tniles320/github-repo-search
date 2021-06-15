@@ -4,18 +4,12 @@
 
 ## Description
 
-Foothill Fitness is a fullstack application used to showcase the client’s current inventory of goods and offered services available to the public that are maintained and updated via user interactions. The application utilizes ReactJS, CSS, NodeJS, MongoDB, PassportJS, ExpressJS, Multer, Axios, AWS s3 Bucket, and RESTful methods to develop frontend design, client-side validations to develop full user experience. Fnally, the application is deployed using Firebase Hosting.
+GitHub Repo Search allows a user to utilize the GitHub api to search for various repos
 
 ### _Visit the website by clicking here_
-[Foothill Fitness](https://foothill-fitness.firebaseapp.com/)
+[GitHub Repo Search](https://tniles320.github.io/github-repo-search/)
 
-### _Check out the API repo by clickling here_
-[foothillfitness-api](https://github.com/tniles320/foothillfitness-api)
-
-### _To view commit history visit the old repo here_
-[foothillfitness-old](https://github.com/tniles320/foothillfitness-old)
-
-![home page screenshot](src/images/ss.png)
+![home page screenshot](src/image/ss.png)
 
 ## Table of Contents 
 
@@ -41,7 +35,7 @@ npm install
 
 ## Usage
 
-This web app utilizes Express, Axios, Multer, s3 Bucket, and MongoDB to allow an admin to dynamically add, update and, remove data. After logging in, the admin will be able to view unique pages, dsiplayed using React's Context. From any of these pages the admin can update current information, delete products, and add new products that will be displayed in real time.
+After installation, run npm start. The application will run on localhost:3000 in your browser and searches can be performed locally.
 
 ## License
 

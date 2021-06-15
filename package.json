@@ -2,6 +2,7 @@
   "name": "github-repo-search",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
@@ -22,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://tniles320.github.io/github-repo-search/",
+  "homepage": "https://tniles320.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",

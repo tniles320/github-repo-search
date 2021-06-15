@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://tniles320.github.io/",
+  "homepage": "https://tniles320.github.io/github-repo-search",
   "eslintConfig": {
     "extends": [
       "react-app",

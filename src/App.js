@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/github-repo-search">
             <Home
               setQuery={setQuery}
               dropdowns={dropdowns}
@@ -47,7 +47,7 @@ function App() {
               setSelectedResult={setSelectedResult}
             />
           </Route>
-          <Route exact path="/results">
+          <Route exact path="/github-repo-search/results">
             <Results
               selectedResult={selectedResult}
               setSelectedResult={setSelectedResult}

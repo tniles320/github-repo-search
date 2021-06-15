@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
@@ -13,6 +13,7 @@ function App() {
     order: "desc",
   });
 
+  // github api axios call using user input set as 'query', then sets 'results'
   const handleSearch = (e) => {
     e.preventDefault();
     if (query === undefined) {
@@ -47,7 +48,10 @@ function App() {
             />
           </Route>
           <Route exact path="/results">
-            <Results selectedResult={selectedResult} />
+            <Results
+              selectedResult={selectedResult}
+              setSelectedResult={setSelectedResult}
+            />
           </Route>
         </Switch>
       </Router>

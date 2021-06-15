@@ -1,0 +1,20 @@
+.resultComponent {
+    margin: 20px 5px 0 5px;
+    width: 100%;
+    border-bottom: rgb(60, 110, 113) 1px solid;
+    padding-bottom: 7px;
+}
+
+.resultComponent:hover {
+    cursor: pointer;
+}
+
+.rcName {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.rcInfo {
+    margin: 2px 0 2px 15px;
+}

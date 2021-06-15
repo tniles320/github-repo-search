@@ -1,0 +1,90 @@
+.repoInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin: 20px 0 20px 0;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user img {
+    height: 25%;
+    width: 25%;
+    border-radius: 4px;
+}
+
+.description {
+    text-align: center;
+}
+
+.repoInfo {
+    margin: 20px;
+    font-size: 1.4rem;
+}
+
+.userURL {
+    text-decoration: none;
+}
+
+.userURL:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.URL {
+    text-decoration: none;
+    color: rgb(60, 110, 113);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.URL:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .name {
+        font-size: 2.2rem;
+        margin-top: 50px;
+    }
+
+    .repoInfo {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+    }
+    
+    .URL {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .name {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .URL {
+        font-size: 1rem;
+    }
+
+}

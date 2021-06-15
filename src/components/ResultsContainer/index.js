@@ -1,4 +1,5 @@
 import ResultComponent from "../ResultComponent";
+import "./style.css";
 
 function ResultsContainer(props) {
   const { results, setSelectedResult } = props;

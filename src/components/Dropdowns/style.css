@@ -1,0 +1,18 @@
+.dropdownContainer {
+    display: flex;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.label {
+    margin-bottom: 4px;
+}
+
+#language,
+#order {
+    border-radius: 2px;
+}

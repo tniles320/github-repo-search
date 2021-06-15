@@ -1,3 +1,5 @@
+import "./style.css";
+
 function UserInput(props) {
   const { setQuery, handleSearch } = props;
 
@@ -6,7 +8,7 @@ function UserInput(props) {
       <form onSubmit={handleSearch}>
         <input
           className="userInput"
-          placeholder="Search..."
+          placeholder="Hello World..."
           onChange={(e) => setQuery({ query: e.target.value })}
         ></input>
         <button className="searchButton" onClick={(e) => handleSearch(e)}>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
+import NoMatch from "./pages/NoMatch";
 import API from "./utils/API";
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
   // github api axios call using user input set as 'query', then sets 'results'
   const handleSearch = (e) => {
     e.preventDefault();
-    if (query === undefined) {
-      alert("Please enter a search term");
+    if (query === undefined || query.query.match("^[a-zA-Z ]*$") === null) {
+      alert("Please enter a valid search term");
     } else {
       setResults();
       const replaceQuery = query.query.replace(/\s/g, "+");
@@ -52,6 +53,9 @@ function App() {
               selectedResult={selectedResult}
               setSelectedResult={setSelectedResult}
             />
+          </Route>
+          <Route>
+            <NoMatch />
           </Route>
         </Switch>
       </Router>

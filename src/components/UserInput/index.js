@@ -7,6 +7,7 @@ function UserInput(props) {
     <div className="inputContainer">
       <form onSubmit={handleSearch}>
         <input
+          type="text"
           className="userInput"
           placeholder="Hello World..."
           onChange={(e) => setQuery({ query: e.target.value })}

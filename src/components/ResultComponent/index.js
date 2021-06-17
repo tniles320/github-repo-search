@@ -6,10 +6,11 @@ import "./style.css";
 function ResultComponent(props) {
   const history = useHistory();
 
-  const { content, setSelectedResult } = props;
+  const { content, setQuery, setSelectedResult } = props;
 
   // sets selectedResult and links to results page
   const handleLink = useCallback(() => {
+    setQuery();
     setSelectedResult({ selectedResult: content });
     history.push("/github-repo-search/results");
   }, [history]);

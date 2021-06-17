@@ -24,6 +24,7 @@ function Home(props) {
       <ResultsContainer
         results={results}
         setSelectedResult={setSelectedResult}
+        setQuery={setQuery}
       />
     </div>
   );

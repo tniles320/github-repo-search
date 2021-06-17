@@ -2,7 +2,7 @@ import "./style.css";
 
 function NoMatch() {
   return (
-    <div className="noMatch">
+    <div className="noMatch gainsboro">
       <h1>404 Page Not Found</h1>
       <h1>
         <span role="img" aria-label="Face With Rolling Eyes Emoji">
